@@ -10,11 +10,11 @@ class MyComponent extends React.Component {
     ],
   };
   addNewJob = (job) => {
-    let currentJobs = this.state.arrJobs;
-      currentJobs.push(job)
+    // let currentJobs = this.state.arrJobs;
+    //   currentJobs.push(job)
     this.setState({ 
-      // arrJobs: [...this.state.arrJobs,job]
-      arrJobs: currentJobs,
+      arrJobs: [...this.state.arrJobs,job]
+      // arrJobs: currentJobs,
     })
   }
   render() {
